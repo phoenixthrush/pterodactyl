@@ -7,11 +7,10 @@ const gray = {
     300: 'hsl(211, 13%, 65%)',
     400: 'hsl(211, 10%, 53%)',
     500: 'hsl(211, 12%, 43%)',
-    600: 'hsl(209, 14%, 37%)',
-    700: 'hsl(209, 18%, 30%)',
-    800: 'hsl(209, 20%, 25%)',
-    900: 'hsl(210, 24%, 16%)',
-};
+    600: '#454545',
+    700: '#282828',
+    800: '#1c1c1c',
+    900: '#171717',};
 
 module.exports = {
     content: [
@@ -23,13 +22,13 @@ module.exports = {
                 header: ['"IBM Plex Sans"', '"Roboto"', 'system-ui', 'sans-serif'],
             },
             colors: {
-                black: '#131a20',
+                black: '#242424',
                 // "primary" and "neutral" are deprecated, prefer the use of "blue" and "gray"
                 // in new code.
                 primary: colors.blue,
                 gray: gray,
                 neutral: gray,
-                cyan: colors.cyan,
+                cyan: colors.purple,
             },
             fontSize: {
                 '2xs': '0.625rem',
@@ -38,7 +37,7 @@ module.exports = {
                 250: '250ms',
             },
             borderColor: theme => ({
-                default: theme('colors.neutral.400', 'currentColor'),
+                default: theme('colors.purple.600', 'currentColor'),
             }),
         },
     },
