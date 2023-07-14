@@ -1,13 +1,10 @@
 cd /var/www/pterodactyl
 
-# change if needed
-alias php="php8.1"
-
-php artisan down
-php artisan migrate --seed --force
+php8.1 artisan down
+php8.1 artisan migrate --seed --force
 yarn install
 yarn build:production
-php artisan config:cache
-php artisan view:cache
-php artisan queue:restart
-php artisan up
+php8.1 artisan config:cache
+php8.1 artisan view:cache
+php8.1 artisan queue:restart
+php8.1 artisan up
