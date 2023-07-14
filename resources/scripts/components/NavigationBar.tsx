@@ -32,6 +32,18 @@ const RightNavigation = styled.div`
     }
 `;
 
+const Title = styled('h1')({
+  fontFamily: '"Roboto", sans-serif',
+  color: '#b02e26',
+  fontWeight: 'bold',
+  textUnderlineOffset: 2,
+  cursor: 'pointer',
+  '& > span': {
+    color: '#fefefe',
+    fontWeight: 'normal',
+  },
+})
+
 export default () => {
     const name = useStoreState((state: ApplicationStore) => state.settings.data!.name);
     const rootAdmin = useStoreState((state: ApplicationStore) => state.user.data!.rootAdmin);
@@ -56,7 +68,7 @@ export default () => {
                             'text-2xl font-header px-4 no-underline text-neutral-200 hover:text-neutral-100 transition-colors duration-150'
                         }
                     >
-                        {name}
+                        <Title>Phoenix<span>MC</span></Title>
                     </Link>
                 </div>
                 <RightNavigation className={'flex h-full items-center justify-center'}>
