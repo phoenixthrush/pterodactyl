@@ -34,7 +34,7 @@ const RightNavigation = styled.div`
 
 const Title = styled('h1')({
   fontFamily: '"Roboto", sans-serif',
-  color: '#b02e26',
+  color: '#9333ea',
   fontWeight: 'bold',
   textUnderlineOffset: 2,
   cursor: 'pointer',
